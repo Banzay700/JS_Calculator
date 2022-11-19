@@ -4,17 +4,68 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>start__</title>
+        <title>Calculator</title>
 
         <link rel="stylesheet" href="./style/reset.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,600,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link rel="stylesheet" href="./style/style.css" />
     </head>
     <body>
-        <div class="wrapper">
-            <header class="header">HEADER</header>
-            <main class="main">MAIN</main>
-            <footer class="footer">FOOTER</footer>
+        <div class="main_wrapper">
+            <h1>My calculator</h1>
+            <div class="inputs_block">
+                <div class="inputs_block-column">
+                    <h6>Дохід в місяць</h6>
+                    <div class="inputs_wrapper">
+                        <input type="number" placeholder="Зарплата" id="income-salary" class="input" />
+                        <input type="number" placeholder="Фріланс" id="income-freelance" class="input" />
+                        <input type="number" placeholder="Дод. дохід" id="income-extra-1" class="input" />
+                        <input type="number" placeholder="Дод. дохід" id="income-extra-2" class="input" />
+                    </div>
+                </div>
+                <div class="inputs_block-column">
+                    <h6>Обовязкові витрати</h6>
+                    <div class="inputs_wrapper">
+                        <input type="number" placeholder="Аренда квартири" id="costs-flat" class="input" />
+                        <input type="number" placeholder="Комунальні послуги" id="costs-house-services" class="input" />
+                        <input type="number" placeholder="Авто" id="costs-transport" class="input" />
+                        <input type="number" placeholder="Кредити" id="costs-credit" class="input" />
+                    </div>
+                </div>
+                <div class="inputs_block-column">
+                    <div class="total-numb">
+                        <h6>В місяць (без копілки)</h6>
+                        <input type="number" class="total" id="total-month" value="0" readonly />
+                    </div>
+                    <div class="total-numb">
+                        <h6>В день</h6>
+                        <input type="number" class="total" id="total-day" value="0" readonly />
+                    </div>
+                    <div class="total-numb">
+                        <h6>Відкладаємо за рік</h6>
+                        <input type="number" class="total" id="total-year" value="0" readonly />
+                    </div>
+                </div>
+            </div>
+            <div class="range_block">
+                <h6>Копілка (Скільки відкладаємо?)</h6>
+                <div class="range_wrapper">
+                    <input type="range" min="0" max="100" value="0" id="money-box-range" />
+                </div>
+                <div><span id="total-precents">0</span>%</div>
+            </div>
+            <div class="result_block">
+                <div class="total-numb">
+                    <h6>Відкладаємо:</h6>
+                    <input type="number" id="accumulation" value="0" readonly />
+                </div>
+                <div class="total-numb">
+                    <h6>Витрачаємо:</h6>
+                    <input type="number" id="spend" value="0" readonly />
+                </div>
+            </div>
         </div>
-        <script src="./js/index.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
