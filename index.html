@@ -16,40 +16,40 @@
             <h1>My calculator</h1>
             <div class="inputs_block">
                 <div class="inputs_block-column">
-                    <h6>Дохід в місяць</h6>
+                    <h6>Monthly income</h6>
                     <div class="inputs_wrapper">
-                        <input type="number" placeholder="Зарплата" id="income-salary" class="input" />
-                        <input type="number" placeholder="Фріланс" id="income-freelance" class="input" />
-                        <input type="number" placeholder="Дод. дохід" id="income-extra-1" class="input" />
-                        <input type="number" placeholder="Дод. дохід" id="income-extra-2" class="input" />
+                        <input type="number" placeholder="Salary" id="income-salary" class="input" />
+                        <input type="number" placeholder="Freelance" id="income-freelance" class="input" />
+                        <input type="number" placeholder="Extra income" id="income-extra-1" class="input" />
+                        <input type="number" placeholder="Extra income" id="income-extra-2" class="input" />
                     </div>
                 </div>
                 <div class="inputs_block-column">
-                    <h6>Обовязкові витрати</h6>
+                    <h6>Mandatory expenses</h6>
                     <div class="inputs_wrapper">
-                        <input type="number" placeholder="Аренда квартири" id="costs-flat" class="input" />
-                        <input type="number" placeholder="Комунальні послуги" id="costs-house-services" class="input" />
-                        <input type="number" placeholder="Авто" id="costs-transport" class="input" />
-                        <input type="number" placeholder="Кредити" id="costs-credit" class="input" />
+                        <input type="number" placeholder="Rent an apartment" id="costs-flat" class="input" />
+                        <input type="number" placeholder="Utilities" id="costs-house-services" class="input" />
+                        <input type="number" placeholder="Car" id="costs-transport" class="input" />
+                        <input type="number" placeholder="Credits" id="costs-credit" class="input" />
                     </div>
                 </div>
                 <div class="inputs_block-column">
                     <div class="total-numb">
-                        <h6>В місяць (без копілки)</h6>
+                        <h6>I can spend in a month (without money box)</h6>
                         <input type="number" class="total" id="total-month" value="0" readonly />
                     </div>
                     <div class="total-numb">
-                        <h6>В день</h6>
+                        <h6>I can spend a day</h6>
                         <input type="number" class="total" id="total-day" value="0" readonly />
                     </div>
                     <div class="total-numb">
-                        <h6>Відкладаємо за рік</h6>
+                        <h6>We save for a year</h6>
                         <input type="number" class="total" id="total-year" value="0" readonly />
                     </div>
                 </div>
             </div>
             <div class="range_block">
-                <h6>Копілка (Скільки відкладаємо?)</h6>
+                <h6>Money box (How much will we save?)</h6>
                 <div class="range_wrapper">
                     <input type="range" min="0" max="100" value="0" id="money-box-range" />
                 </div>
@@ -57,15 +57,15 @@
             </div>
             <div class="result_block">
                 <div class="total-numb">
-                    <h6>Відкладаємо:</h6>
+                    <h6>Save for a month:</h6>
                     <input type="number" id="accumulation" value="0" readonly />
                 </div>
                 <div class="total-numb">
-                    <h6>Витрачаємо:</h6>
+                    <h6>Spend for a month:</h6>
                     <input type="number" id="spend" value="0" readonly />
                 </div>
             </div>
         </div>
-        <script src="./js/main.js"></script>
+        <script src="./js/main.js" type="module"></script>
     </body>
 </html>
